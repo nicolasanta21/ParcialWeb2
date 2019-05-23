@@ -7,7 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>inicio</h1>
+        <h1>principal</h1>
+
+    <ul>
+        {{#each entradas.general}}
+        <li>
+            <div> Nombre : {{url}}</div>
+            <div>entradas: {{entradas}}</div>
+            <div>Fecha: {{fecha}} </div>
+        </li>
+        {{/each}}
+    </ul>
 
 
 </body>
