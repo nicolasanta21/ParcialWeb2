@@ -15,5 +15,37 @@ body{
     background-color: #3CAEA3;
     font-weight: 800;
     color: white;
+    
 
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.contenido{
+    display: flex;
+    justify-content: center;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+ .tabla{
+    background-color: white;
+    text-align: center;
+    width: 50%;
+}
+
+th,td{
+border: solid 1px #3CAEA3;
+padding: 10px;
+}
+
+th{
+    color: white;
+}
+
+thead{
+    background-color: #3CAEA3;
 }

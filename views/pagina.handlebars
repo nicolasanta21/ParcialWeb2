@@ -5,27 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800&display=swap" rel="stylesheet">
-          <link rel="stylesheet" href="./styles/styles.css">
+          
 
 </head>
 <body>
-   <div class="nav">
-        <p class="nav_item">Inicio</p>
-        <p class="nav_item">Sobre Nosotros</p>
-        <p class="nav_item">Contacto</p>
-    </div>
-    <h1>Estas son las visitas</h1>
+     <div class="nav">
+        <a class="nav_item" href="/inicio">Inicio</a>
+        <a class="nav_item" href="/nosotros">Sobre Nosotros</a>
+        <a class="nav_item" href="/contacto">Contacto</a>
+        <a class="nav_item" href="/principal">Visitas</a>
 
-    <ul>
-        {{#each entradas.general}}
-        <li>
-            <div> Nombre : {{url}}</div>
-            <div>entradas: {{entradas}}</div>
-            <div>Fecha: {{fecha}} </div>
-        </li>
-        {{/each}}
-    </ul>
+    </div>
+    <div class="titulo">
+        <h1>Estas son las visitas</h1>
+    </div>
+
+    <div class="contenido">
+
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Entradas</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            {{#each entradas.general}}
+            
+
+            <tr>
+                <td>{{url}}</td>
+                <td>{{entradas}}</td>
+                <td>{{fecha}}</td>
+
+            </tr>
+
+            {{/each}}
+        </table>
+
+    </div>
 
 
 </body>
