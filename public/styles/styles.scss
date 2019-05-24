@@ -70,11 +70,13 @@ thead{
 .imagenes{
     display: flex;
     flex-direction: row;
-    width: 2550px;
+    width: 1800px;
     align-content: space-around;
 
     img{
+        object-fit: cover;
         width: 20%;
         height: 20%;
+        padding: 50px;
     }
 }
