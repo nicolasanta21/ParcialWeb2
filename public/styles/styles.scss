@@ -49,3 +49,10 @@ th{
 thead{
     background-color: #3CAEA3;
 }
+
+.cosas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px;
+}
