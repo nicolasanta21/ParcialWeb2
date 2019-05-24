@@ -23,6 +23,12 @@ a{
     color: white;
     text-decoration: none;
 }
+
+a:hover{
+    color: #F6D55C;
+    transition: all 1s ease;
+    text-decoration: none;
+}
 .contenido{
     display: flex;
     justify-content: center;
@@ -30,6 +36,8 @@ a{
 .titulo{
     display: flex;
     justify-content: center;
+    color: #F6D55C;
+    font-weight: 800;
 }
  .tabla{
     background-color: white;
