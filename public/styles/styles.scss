@@ -54,5 +54,19 @@ thead{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    width: 2550px;
+    align-content: space-around;
+
+    img{
+        width: 20%;
+        height: 20%;
+    }
 }
